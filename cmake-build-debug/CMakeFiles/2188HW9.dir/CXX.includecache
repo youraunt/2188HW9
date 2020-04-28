@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/Functions.cpp
+Functions.h
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/Functions.h
+utility
+-
+
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/Functions.h
+unordered_map
+-
+utility
+-
+cstdio
+-
+algorithm
+-
+cassert
+-
+iostream
+-
+fstream
+-
+list
+-
+filesystem
+-
+HashTable.h
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.h
+
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.h
+iostream
+-
+list
+-
+cctype
+-
+fstream
+-
+
