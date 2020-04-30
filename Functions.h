@@ -14,6 +14,8 @@
 #include <fstream>
 #include <list>
 #include <filesystem>
+#include <unordered_set>
+#include <experimental/iterator>
 
 #define WHAT_IS(x) std::cerr << #x << " is " << x << std::endl;
 
@@ -39,14 +41,20 @@ inline void unknown_input() {
     exit(EXIT_FAILURE);
 }
 
-unsigned int dictionary_matches(const std::string &file);
+unsigned int dictionary_matches(const std::string &file, const std::unordered_set<std::string> &set);
 
 int total_words_in_file(const std::string &file);
 
-bool enter_program(int argc, char **argv, const HashTable &dictionary_hash_table);
+bool enter_program(int argc, char **argv, HashTable &hashTable, const std::unordered_set<std::string> &set);
 
 std::string get_file_name(int argc, char **argv);
+
 std::string get_reference_file_name();
 
+std::string tolower(const std::string &s);
+
+std::ifstream &getWord(std::ifstream &fin, std::string &w);
+
+void print(std::unordered_set<std::string> const &s);
 
 #endif //INC_2188HW9_FUNCTIONS_H

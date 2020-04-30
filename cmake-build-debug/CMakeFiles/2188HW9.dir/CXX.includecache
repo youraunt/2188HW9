@@ -31,8 +31,20 @@ list
 -
 filesystem
 -
+unordered_set
+-
+experimental/iterator
+-
 HashTable.h
 /cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.h
+
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.cpp
+algorithm
+-
+HashTable.h
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.h
+Functions.h
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/Functions.h
 
 /cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.h
 iostream
@@ -43,4 +55,12 @@ cctype
 -
 fstream
 -
+utility
+-
+
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/main.cpp
+Functions.h
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/Functions.h
+HashTable.h
+/cygdrive/c/Users/dietb/CLionProjects/2188HW9/HashTable.h
 

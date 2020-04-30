@@ -17,13 +17,14 @@ void HashTable::from_file(const std::string &file) {
 
     while (in_file.peek() != EOF) {
         in_file >> temporary_string_housing;
-        temporary_string_housing = clean_string(temporary_string_housing);
+        temporary_string_housing = tolower(temporary_string_housing);
         put(temporary_string_housing);
     }
+    in_file.close();
 }
 
 bool HashTable::is_in_table(std::string entry) {
-    entry = clean_string(entry);
+    entry = tolower(entry);
     int index = hash_string(entry);
     std::list<std::string>::iterator iterator;
     for (iterator = hash_table[index].begin(); iterator != hash_table[index].end(); ++iterator) {
@@ -48,7 +49,7 @@ int HashTable::how_big() {
 std::string HashTable::clean_string(std::string in) {
     std::string out;
     in.erase(std::remove_if(in.begin(), in.end(), (int (*)(int)) std::isalnum), in.end());
-    std::transform(in.begin(), in.end(), std::back_inserter(out), ::tolower);
+    //std::transform(in.begin(), in.end(), std::back_inserter(out), ::to_lower);
     return out;
 }
 

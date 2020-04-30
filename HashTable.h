@@ -9,13 +9,14 @@
 #include <list>
 #include <cctype>
 #include <fstream>
+#include <utility>
 
 class HashTable {
     static const int SIZE_OF_TABLE = 1373;
 
     std::list<std::string> hash_table[SIZE_OF_TABLE];
 public:
-    int hash_string(const std::string &in);
+    static int hash_string(const std::string &in);
 
     void from_file(const std::string &file);
 
@@ -26,6 +27,8 @@ public:
     int how_big();
 
     static std::string clean_string(std::string in);
+
+
 
 
 };
